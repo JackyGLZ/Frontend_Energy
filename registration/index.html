@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Reto 5 Html</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+
+<body>
+    <div class="registration-form">
+        <form>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="Nombre" placeholder="Nombre" value=""required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="Apellidos" placeholder="Apellidos" value=""required>
+                <!-- Mensajes para validación   -->
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos de este campo.</div>
+            </div>
+            <div class="form-group">            
+                <input type="text" class="form-control item" id="Correo" placeholder="Correo electronico" value=""required>
+                <!-- Mensajes para validación   -->
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos de este campo.</div>
+
+            </div>
+            <div class="form-group">
+                <label for="genero" class="form-label">Genero</label>
+                        <select class="form-select" id="genero" required>
+                            <option selected disabled value="">Seleccione Genero...</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>No Binario</option>                                               
+                        </select>
+                        <!-- Mensajes para validación   -->
+                        <div class="valid-feedback">¡Campo válido!</div>
+                        <div class="invalid-feedback">Debe completar los datos.</div>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Comentarios" class="form-label ejemplo">Comentarios</label>
+                <textarea class="form-control" id="comentarios" rows="3"></textarea>
+
+            </div>
+            <div class="form-group">
+                <label for="opcion" class="form-label">opcion</label>
+                        <select class="form-select" id="genero" required>
+                            <option selected disabled value="">Seleccione un opcion...</option>
+                            <option>Informacion sobre el sitio</option>
+                            <option>Disponibilidad de servidores</option>
+                            <option>Desarrollo we</option>                                               
+                        </select>
+                        <!-- Mensajes para validación   -->
+                        <div class="valid-feedback">¡Campo válido!</div>
+                        <div class="invalid-feedback">Debe completar los datos.</div>
+                </select>
+            </div>
+            
+
+            <div class="form-group">
+                <input type="file" class="form-control" aria-label="file example" required>
+                <div class="invalid-feedback">cargar archivo</div>
+            </div> 
+            <div class="form-group">
+
+                <button class="btn btn-warning fw-bold" type="submit">Enviar formulario</button>
+            </div>
+           
+
+        </form>
+        <div class="social-media">
+            <h5>Entra con tus redes sociales</h5>
+            <div class="social-icons">
+                <a href="#"><em class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="#"><em class="icon-social-google" title="Google"></i></a>
+                <a href="#"><em class="icon-social-twitter" title="Twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+   
+    <script type="text/javascritp">
+        function pruebaemail (valor){
+            re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+            if(!re.exec(valor)){
+                alert('email no valido');
+            }
+            else alert('email valido');
+            }
+        </script>
+</body>
+
+</html>   
+               
+
+
+            
